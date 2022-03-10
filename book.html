@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK NOW</title>
+    <link rel="stylesheet" href="css/bookstyles.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-item">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">Monday-Friday</h3>
+            <p>10am - 4pm </p>
+
+            <h3 class="heading-days">Saturday & Sunday</h3>
+            <p>7am - 6pm </p>
+
+            <hr>
+
+            <h4 class="heading-phone">Call Us: +254 123 456 789</h4>
+        </div>
+
+        <div class="container-form">
+            <form action="book.php" method="post">
+                <h2 class="heading">Book an Appointment</h2>
+
+                <div class="form-field">
+                    <p>Your Name:</p>
+                    <input type="text" placeholder="Your Name" name="yourName" required>
+                </div>
+                <div class="form-field">
+                    <p>Your Email:</p>
+                    <input type="email" placeholder="Your email" id="email" name="emailAddress" required>
+                </div>
+                <div class="form-field">
+                    <p>Date:</p>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-field">
+                    <p>Time:</p>
+                    <input type="time" name="time" required>
+                </div>
+                <div class="form-field">
+                    <p>Type of Service</p>
+                    <select name="serviceType" id="serviceType" required>
+                        <option value="Home Cleaning" selected>Home Cleaning</option>
+                        <option value="Baby Sitting">Baby Sitting</option>
+                        <option value="Laundry">Laundry</option>
+                    </select>
+                </div>
+                <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="button" value="Back" onclick="history.back()">
+            </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html> 
